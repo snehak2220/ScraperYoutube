@@ -42,7 +42,7 @@ Run the following Django commands to set up the database:
  Copy
   python manage.py makemigrations
   python manage.py migrate
-```sh
+```
 # 6. Start the Django Development Server
 bash
 Copy
