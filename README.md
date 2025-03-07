@@ -7,10 +7,10 @@ Excel Export: The scraped video data can be exported to an Excel file.
 Display Data: The scraped videos are displayed on a web page.
 # Requirements
 -- Python 3.x
-Django 3.x or higher
-Selenium
-ChromeDriver (make sure it matches your version of Chrome)
-Pandas
-openpyxl (for saving to Excel)
+-- Django 3.x or higher
+-- Selenium
+-- ChromeDriver (make sure it matches your version of Chrome)
+-- Pandas
+-- openpyxl (for saving to Excel)
 Installation
 1. Clone the repository
