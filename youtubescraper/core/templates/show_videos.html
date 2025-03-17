@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-4">
+    <h2 class="mb-4">YouTube Video Results</h2>
+    <div class="row">
+        {% for video in videos %}
+        <div class="col-md-6 mb-4">
+            <div class="card h-100">
+                <div class="card-body">
+                    <h5 class="card-title">{{ video.title }}</h5>
+                    <div class="card-text">
+                        <p><strong>Channel:</strong> {{ video.channel_name }}</p>
+                        <p><strong>Views:</strong> {{ video.views }}</p>
+                        <p><strong>Posted:</strong> {{ video.time_posted }}</p>
+                        <a href="{{ video.video_url }}" class="btn btn-primary" target="_blank">Watch Video</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}
